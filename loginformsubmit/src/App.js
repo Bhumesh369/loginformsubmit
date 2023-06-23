@@ -60,14 +60,16 @@ const App = ()=>{
       <form onSubmit={onSubmit}>
         <div>
       <h1> Hello {fullName.fname}{" "}{fullName.lname} </h1>
-      <input type="text" 
+      <p>{fullName.email}</p>
+      <p>{fullName.phone}</p>
+      <input 
               placeholder="Enter your First name" 
               name="fName"
               onChange={inputEvent}
               value={fullName.fname}
               />
       <br/>
-      <input type="text" 
+      <input 
               placeholder="Enter your Last name" 
               name="lName"
               onChange={inputEvent}
@@ -75,14 +77,14 @@ const App = ()=>{
               />
       <br/>
       <input type="email" 
-              placeholder="Enter your First name" 
+              placeholder="Enter your email" 
               name="email"
               onChange={inputEvent}
               value={fullName.email}
               />
       <br/>
       <input type="number" 
-              placeholder="Enter your First name" 
+              placeholder="Enter your phone number" 
               name="phone"
               onChange={inputEvent}
               value={fullName.phone}
